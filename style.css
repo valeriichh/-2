@@ -1,0 +1,118 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(209, 181, 190);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.merch {
+  color: rgb(204, 166, 209);
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 100px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 40px;
+  margin: 0 0;
+}
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 20px;
+  margin: 0 0;
+}
+h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 20px;
+  margin: 0 0;
+}
+p { font-size: 20px;
+}
+select {
+  font-size: 20px;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 40px;
+  
+}
+.contacts {
+  display: block;
+  flex-direction: column;
+  justify-content: left;
+}
+button {
+  background: #7e8ba7;
+}
+
+
+  /* Свойства фотографии*/
+.photo {
+
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 300px;
+  border: 3px solid transparent;
+  box-shadow: 0 4px 15px 0px rgba(216, 152, 187, 0.52);
+  object-fit: cover;
+  animation: ava-animate 5s infinite alternate;
+  
+}
+
+@keyframes ava-animate {
+  0% {
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0% ;
+  }
+  40% {
+    border-radius: 43% 57% 100% 0% / 100% 100% 0% 0% ;
+  }
+  60% {
+    border-radius: 43% 57% 52% 48% / 44% 95% 5% 56%  ;
+  }
+  100% {
+    border-radius: 49% 51% 44% 56% / 44% 43% 57% 56%  ;
+  }
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid hsl(88, 38%, 36%);
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration-thickness: ;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:darkred;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
